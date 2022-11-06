@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    position: absolute;
+    top: 20%;
+}
+
+.display{
+    height: 120px;
+    width: 252px;
+    border: 2px solid rgb(51, 46, 46);
+    font-size: 20px;
+    margin: -2px;
+    background: white;
+    position: relative;
+    text-align: right;
+}
+
+.main-div form{
+    background: #102935;
+    border: 15px solid #58bbe29d;
+}
+
+.main-div form .num{
+    height: 55px;
+    width: 60px;
+    margin: 0 -2px;
+    border: 0;
+    background: #102935;
+    color: white;
+}
+
+.main-div form .num:active{
+    background: #12ff0ab2;
+}
+
+.main-div form .C{
+    height: 55px;
+    width: 130px;
+    background: #ff2d2d;
+    color: white;
+}
+
+.main-div form .math-operation-symbol{
+    width: 71px;
+    left: -0.4px;
+    position: relative;
+    border: none;
+}
+
+.main-div form .divide{
+    width: 61px;
+}
+
+.main-div form .multiply{
+    width: 61px;
+}
+
+.main-div form .down{
+    position: relative;
+    width: 84px;
+}
+
+.main-div form .result{
+    background: #ff922d;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="Calculator.css">
+        <script>
+
+            function number(n){
+                var num = document.calc.txt.value +=n;
+                return num;
+            }
+
+            function result(){
+              var num= number('');
+              document.getElementById("display").value = eval(num);
+              if (document.calc.txt.value == "undefined"){
+                document.getElementById("display").value = '';   
+              }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="main-div">
+            <form name="calc">
+
+                <input class="display" type="text" id="display" name="txt" placeholder="0"><br>
+
+                <input type="button" class="num C" onclick="document.calc.txt.value = ''" value="C">
+                <input type="button" class="num divide" onclick="number('/')" value="/">
+                <input type="button" class="num multiply" onclick="number('*')" value="*"><br>
+
+                <input type="button" class="num" onclick="number(7)" value="7">
+                <input type="button" class="num" onclick="number(8)" value="8">
+                <input type="button" class="num" onclick="number(9)" value="9">
+                <input type="button" class="num math-operation-symbol" onclick="number('+')" value="+"><br>
+
+                <input type="button" class="num" onclick="number(4)" value="4">
+                <input type="button" class="num" onclick="number(5)" value="5">
+                <input type="button" class="num" onclick="number(6)" value="6">
+                <input type="button" class="num math-operation-symbol" onclick="number('-')" value="-"><br>
+
+                <input type="button" class="num" onclick="number(1)" value="1">
+                <input type="button" class="num" onclick="number(2)" value="2">
+                <input type="button" class="num" onclick="number(3)" value="3">
+                <input type="button" class="num math-operation-symbol" onclick="number('.')" value="."><br>
+
+                <input type="button" class="num down" onclick="number(0)" value="0">
+                <input type="button" class="num down" onclick="number('00')" value="00">
+                <input type="button" class="num down result" onclick="result()" value="=">
+
+            </form>
+        </div>
+    </body>
+</html>
